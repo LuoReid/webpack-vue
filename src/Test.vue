@@ -23,19 +23,22 @@ export default {
   }
 };
 </script>
-<style lang="sass" scoped>
-.movies 
+<style lang="less" scoped>
+.movies {
   list-style: none;
   padding: 12px;
   background: rgba(0, 0, 0, 0.1);
-  border-radius: 3px;  
-  .movie:not(:last-child) 
+  border-radius: 3px;
+  .movie:not(:last-child) {
     padding-bottom: 6px;
     margin-bottom: 6px;
     border-bottom: solid 1px rgba(0, 0, 0, 0.1);
+  }
+}
 
-
-.article
-  .title
-    border-bottom: solid 3px rgba(red,.2)    
+.article {
+  .title {
+    border-bottom: solid 3px fade(red, 20%);
+  }
+}
 </style>
