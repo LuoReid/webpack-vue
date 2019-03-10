@@ -1,12 +1,3 @@
-<template lang="pug">
-//-   <!-- <div>
-//-     <p>{{message}}</p>
-//-     <input v-model="message">
-//-   </div> -->
-ul.movies
-    li.move Star Wars
-    li.move Blade Runner
-</template>
 <script>
 export default {
   data() {
@@ -14,6 +5,14 @@ export default {
       message: "Hello world",
       movies: [{ title: "Star Wars" }, { title: "Blade Runner" }]
     };
+  },
+  render(h) {
+    const itemClass = "movie";
+    return <ul class="moves">
+      { this.movies.map(move => 
+        <li class={itemClass}>{move.title}</li>
+      )}
+    </ul>
   }
 };
 </script>
